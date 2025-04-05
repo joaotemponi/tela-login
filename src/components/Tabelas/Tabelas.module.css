@@ -1,0 +1,46 @@
+.table_container {
+    padding: 2rem 5%;
+    min-height: calc(100vh - 200px);
+    background-color: var(--branco-suave);
+}
+
+.tabela {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabela :global(.p-datatable-header) {
+    background-color: var(--cor-primaria);
+    color: var(--branco-suave);
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 8px 8px 0 0;
+}
+
+.tabela :global(.p-datatable-thead) th {
+    background-color: var(--cor-primaria);
+    color: var(--branco-suave);
+    padding: 0.8rem;
+    font-weight: bold;
+}
+
+.tabela :global(.p-datatable-tbody) td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.tabela :global(.p-datatable-tbody) tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.tabela :global(.p-paginator) {
+    padding: 1rem;
+    background-color: transparent;
+}
+
+.tabela :global(.p-button) {
+    background-color: var(--cor-primaria);
+    border: none;
+    margin: 0 0.2rem;
+}

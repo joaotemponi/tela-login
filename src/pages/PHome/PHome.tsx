@@ -7,7 +7,7 @@ function PHome() {
     return (
         <>
             <Cabecalho />
-            <TabelaAluno />
+            <Welcome />
             <Rodape />
         </>
     );
