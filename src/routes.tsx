@@ -5,6 +5,7 @@ import PLogin from './pages/PLogin/PLogin';
 import PTabelaEmprestimo from './pages/PTabelaEmprestimo/TabelaEmprestimoPage.tsx';
 import PTabelaLivro from './pages/PTabelaLivros/TabelaLivroPage.tsx';
 import PTabelaAluno from './pages/PTabelaAlunos/TabelaAlunoPage.tsx';
+import CadastrarLivroPage from "./pages/PCadastrarLivro/CadastrarLivroPage";
 
 function AppRoutes() {
     return (
@@ -15,7 +16,7 @@ function AppRoutes() {
                 <Route path={APP_ROUTES.ROUTE_TABELA_EMPRESTIMO} element={< PTabelaEmprestimo/>}/>
                 <Route path={APP_ROUTES.ROUTE_TABELA_LIVRO} element={< PTabelaLivro/>}/>
                 <Route path={APP_ROUTES.ROUTE_TABELA_ALUNO} element={< PTabelaAluno/>}/>
-
+                <Route path="/cadastrar-livro" element={<CadastrarLivroPage />} />
             </Routes>
         </BrowserRouter>
     );

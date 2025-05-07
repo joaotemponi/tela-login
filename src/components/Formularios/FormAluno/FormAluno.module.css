@@ -1,0 +1,66 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000 url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    animation: moveBackground 20s linear infinite;
+    color: #fff;
+
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+form {
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #f2f2f2;
+}
+
+input {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
